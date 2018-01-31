@@ -8,6 +8,7 @@ import android.content.Context;
  */
 
 public class MainApplication extends Application{
+    //master分支修改
     public static Context mContext ;
     @Override
     public void onCreate() {
