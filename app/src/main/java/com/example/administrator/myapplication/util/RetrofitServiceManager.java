@@ -1,7 +1,5 @@
 package com.example.administrator.myapplication.util;
 
-import android.util.Log;
-
 import com.example.administrator.myapplication.MainApplication;
 
 import java.io.File;
@@ -46,7 +44,6 @@ public class RetrofitServiceManager {
                     public Response intercept(Chain chain) throws IOException {
                         Request request = chain.request().newBuilder().build();
 //                                .addHeader("ClientHeaderInfo","1eyJWZXJDb2RlIjoiMS41LjAiLCJBY2NvdW50SURTaWduYXR1cmUiOiIiLCJBcHBMYW5nIjoiemgiLCJCU1NJRCI6Ijg0JTNBM0ElM0E0QiUzQTM1JTNBM0QlM0E0MCIsIkNIQ29kZSI6IkEwMDEiLCJUb2tlbiI6Ik4wZk1zcm5kaWZ2blZhOXlZOHZBbmhhUnA5eUJjUkJzSU1paDRUdXBZcGdcdTAwM2QiLCJTaW1JREZBIjoiIiwiRGV2aWNlTGFuZyI6InpoIiwiRGV2aWNlTW9kZWwiOiJPUFBPK1IxMSIsIlNlc3Npb25JRCI6IiIsIklERkEiOiIiLCJJREZWIjoiIiwiSU1FSSI6Ijg2NjE3NDAxMDg0NTg3OSIsIkpiRmxhZyI6IiIsIkxvZ2luQ29kZSI6IiIsIkxvZ2luU2lnbmF0dXJlIjoiIiwiU2VyaWFsIjoiODQzYTRiMzUzZDQwNzc1NSIsIk1hYyI6Ijg0JTNBM0ElM0E0QiUzQTM1JTNBM0QlM0E0MCIsIlNjcmVlbiI6IjEyODAqNzIwIiwiUlRpbWUiOiIiLCJPU1ZlciI6IjQuNC4yIiwiT3BlbklEIjoiODQzYTRiMzUzZDQwNzc1NV84NjYxNzQwMTA4NDU4NzlfODQlM0EzQSUzQTRCJTNBMzUlM0EzRCUzQTQwIiwiUGxhdEZvcm0iOjExLCJQcm9kdWN0SUQiOjMxNjgsIlByb2plY3RJRCI6OSwiT1NUeXBlIjoyLCJOZXQiOjEsIkxvZ2luU3RhbXAiOjAsIkRldmljZVR5cGUiOjIsIkRhdGFUeXBlIjoyLCJDSElEIjowLCJUb2tlblR5cGUiOjEsIkFjY291bnRJRCI6MCwiVmVySUQiOjE1MDB9")
-                        Log.i(TAG, "intercept: " + request.url());
                         return chain.proceed(request);
                     }
                 })
