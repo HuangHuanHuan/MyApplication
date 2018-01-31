@@ -5,5 +5,6 @@ package com.example.administrator.myapplication;
  */
 
 public interface WriteCallBack {
+    ///哈哈哈
     void Complete();
 }
